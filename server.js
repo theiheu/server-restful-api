@@ -17,7 +17,6 @@ const dbFilePath = path.join(__dirname, "db.json");
 
 const readData = () => {
   if (!fs.existsSync(dbFilePath)) {
-    console.log("Line: 21 - Here");
     return { vocabularies: [] };
   }
   const data = fs.readFileSync(dbFilePath, "utf-8");
@@ -57,7 +56,6 @@ app.put("/vocab/:id", (req, res) => {
     (item) => item.id === parseInt(req.params.id)
   );
 
-  console.log('Line: 62 - Here', data)
   if (itemIndex > -1) {
     data.vocabularies[itemIndex] = {
       ...data.vocabularies[itemIndex],
