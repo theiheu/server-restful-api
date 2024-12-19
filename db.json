@@ -1,0 +1,13 @@
+{
+  "vocabularies": [
+    {
+      "id": 1,
+      "english": "Sample Vocabulary 1",
+      "key": "n",
+      "type": "noun",
+      "vietnamese": "Ví dụ từ vựng 1",
+      "pronounce": "ˈvɑː.kæb.jə.ler.i",
+      "example": "This is a sample vocabulary"
+    }
+  ]
+}
